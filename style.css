@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-radius-left{
+    position: absolute;
+    background: linear-gradient(orange,red);
+    width: 350px;
+    height: 480px;
+    top: 0;
+    left: -25px;
+    z-index: -1;
+    border-radius: 0 0 127px 110px;
+}
+
+.box-radius-right{
+    position: absolute;
+    background: linear-gradient(rgba(255, 166, 0, 0.199),rgba(255, 0, 0, 0.194));
+    width: 350px;
+    height: 480px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 127px 110px 0 0;
+}
+
+.container{
+    z-index: 5;
+    max-width:900px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tel-container{
+    width: 280px;
+    height: 480px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.tel-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.texte-container{
+    width: 50%;
+}
+
+.texte-container h1{
+    font-weight: 800;
+    text-align: center;
+}
+
+.texte-container p{
+    margin-top: 20px;
+    color: #17131371;
+    font-weight: 600;
+}
+
+@media screen and (max-width:884px) {
+    .container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .texte-container{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .tel-container{
+        width: 230px;
+    }
+
+    .box-radius-left{
+        left: -150px;
+    }
+
+    .box-radius-right{
+        right: -90px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .tel-container{
+        margin-top: 30px;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .tel-container{
+        margin-top: 30px;
+        width: 160px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .tel-container{
+        margin-top: 30px;
+        width: 180px;
+    }
+
+}
